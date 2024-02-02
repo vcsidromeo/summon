@@ -1,4 +1,5 @@
 requests
 json_minify
 fake_useragent
+ujson
 websocket-client==1.5.1
