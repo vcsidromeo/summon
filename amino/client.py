@@ -21,7 +21,11 @@ import random
 from fake_useragent import UserAgent
 ua = UserAgent(browsers=['safari'])
 user_agent=ua.random
+import os 
 
+os.environ['HTTP_PROXY'] ="http://fzaynofi:xl0q9jnm9trx@188.74.210.21:6100"
+
+os.environ['HTTPS_PROXY'] ="http://fzaynofi:xl0q9jnm9trx@188.74.210.21:6100"
 class Client(Callbacks, SocketHandler):
     def __init__(self, deviceId="191F0EA15821FD7A1A577A0ABFFAE9FD2C5804DE080BA97CBCABB8E7E2EDB0B75FFD0E6AF92D9895D2", userAgent: str=user_agent, proxies:str= None, certificatePath = None, socket_trace = False, socketDebugging = False, socket_enabled = True, autoDevice = False, sub: bool = False):
         self.api = "https://service.narvii.com/api/v1"
