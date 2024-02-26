@@ -3,4 +3,3 @@ json_minify
 fake_useragent
 ujson
 flask
-websocket-client==1.5.1
