@@ -3,3 +3,4 @@ json_minify
 fake_useragent
 ujson
 flask
+names
